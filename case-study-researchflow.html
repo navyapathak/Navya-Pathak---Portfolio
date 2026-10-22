@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ResearchFlow UX Case Study — AI Research Workspace by Navya Pathak. Interaction Design, Information Architecture, and AI UX.">
+  <meta name="author" content="Navya Pathak">
+  <title>ResearchFlow Case Study — Navya Pathak | UI/UX Designer & Front-End Developer</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%236366F1'/%3E%3Ctext x='50%25' y='55%25' font-family='sans-serif' font-weight='bold' font-size='16' fill='white' text-anchor='middle' dominant-baseline='middle'%3EN%3C/text%3E%3C/svg%3E">
+</head>
+<body class="case-study-page">
+
+  <!-- Floating Navigation Bar -->
+  <nav class="site-nav" aria-label="Case Study Navigation">
+    <div class="nav-container">
+      <a href="index.html#work" class="nav-brand" aria-label="Back to Portfolio Home">
+        <span class="brand-symbol">←</span>
+        <span>Back to Selected Work</span>
+      </a>
+
+      <div class="nav-actions">
+        <button id="themeToggleBtn" class="theme-toggle-btn" aria-label="Toggle theme">
+          <svg class="sun-icon" style="display:none;" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line></svg>
+          <svg class="moon-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+        </button>
+        <a href="https://github.com/navyapathak/Research-Flow" target="_blank" rel="noopener" class="btn btn-primary btn-sm">
+          <span>GitHub Repo</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="cs-standalone-container">
+    <!-- Hero Header -->
+    <header class="cs-hero-header reveal">
+      <div class="cs-badge-row">
+        <span class="badge badge-accent">Featured Project 02</span>
+        <span class="badge badge-subtle">Interaction Design · Information Architecture · AI UX</span>
+      </div>
+      <h1 class="cs-main-headline">ResearchFlow — AI Research Workspace</h1>
+      <p class="cs-main-subheadline">
+        An AI research workspace designed to make document exploration, academic literature synthesis, and source verification clearer, traceable, and intuitive through synchronized split-screen interaction.
+      </p>
+
+      <!-- Project Metadata Card -->
+      <div class="cs-meta-bar">
+        <div class="cs-meta-col">
+          <span class="meta-label">Role</span>
+          <strong class="meta-val">Lead Product Designer & UX Architect</strong>
+        </div>
+        <div class="cs-meta-col">
+          <span class="meta-label">Scope</span>
+          <strong class="meta-val">AI Interaction Design, Citation Architecture, Dual-Pane Workspace Layout</strong>
+        </div>
+        <div class="cs-meta-col">
+          <span class="meta-label">Tools & Stack</span>
+          <strong class="meta-val">Figma, React, TypeScript, Tailwind CSS, Local IndexedDB</strong>
+        </div>
+        <div class="cs-meta-col">
+          <span class="meta-label">Project Type</span>
+          <strong class="meta-val">Verified High-Fidelity Prototype & System Design</strong>
+        </div>
+      </div>
+
+      <!-- Hero Visual Showcase -->
+      <div class="cs-hero-preview-frame">
+        <img 
+          src="assets/images/projects/researchflow-hero.png" 
+          alt="ResearchFlow AI Research Workspace - Synchronized Split-Screen Reader and Citation Conversation" 
+          class="cs-hero-img"
+          loading="eager"
+        >
+      </div>
+    </header>
+
+    <!-- Case Study Content Sections -->
+    <article class="cs-body-content">
+      
+      <!-- Section 1: Executive Summary -->
+      <section class="cs-doc-section reveal">
+        <div class="cs-section-num-tag">01 / Overview</div>
+        <h2 class="cs-doc-title">Product Vision: Solving the "Epistemic Trust" Crisis in AI</h2>
+        <p class="cs-paragraph">
+          Generative AI chatbots have unlocked immense speed for text summarization, but have introduced a critical UX breakdown: <strong>answers are completely decoupled from their source documents</strong>. Researchers receive plausible-sounding answers with no clear way to verify whether the AI hallucinated the claims or cited legitimate empirical data.
+        </p>
+        <p class="cs-paragraph">
+          <strong>ResearchFlow</strong> was designed around a fundamental UX principle: <em>Place the document and its verifiable evidence at the absolute center of the experience.</em>
+        </p>
+        <div class="cs-highlights-grid">
+          <div class="cs-highlight-card">
+            <span class="highlight-num">1. Synchronized View</span>
+            <p>Split-screen workspace linking conversation prompts directly to document pages.</p>
+          </div>
+          <div class="cs-highlight-card">
+            <span class="highlight-num">2. Bidirectional Citations</span>
+            <p>Clicking any citation badge auto-jumps the reader and pulses the exact evidentiary paragraph.</p>
+          </div>
+          <div class="cs-highlight-card">
+            <span class="highlight-num">3. Anti-Hallucination Disclosures</span>
+            <p>Explicit warnings when uploaded documents lack sufficient empirical evidence to answer.</p>
+          </div>
+          <div class="cs-highlight-card">
+            <span class="highlight-num">4. Zero-Lock-In Privacy</span>
+            <p>Local client-side caching via IndexedDB ensuring sensitive research papers never leak.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 2: Problem Statement -->
+      <section class="cs-doc-section reveal">
+        <div class="cs-section-num-tag">02 / Problem Discovery</div>
+        <h2 class="cs-doc-title">The Friction: Why Academic Researchers Distrust Generic AI</h2>
+        <p class="cs-paragraph">
+          Interviews with student researchers, thesis candidates, and literature review authors revealed three persistent pain points in traditional conversational AI tools:
+        </p>
+        <div class="cs-cards-row">
+          <div class="cs-card">
+            <div class="cs-card-badge red">Pain Point 1</div>
+            <h4 class="cs-card-title">Context Switching Tax</h4>
+            <p class="cs-card-text">
+              Users constantly toggle between a PDF reader tab and a chat interface, manually searching for keywords to verify claims made by the model.
+            </p>
+          </div>
+          <div class="cs-card">
+            <div class="cs-card-badge yellow">Pain Point 2</div>
+            <h4 class="cs-card-title">Missing Methodological Nuance</h4>
+            <p class="cs-card-text">
+              Generic summaries blur critical experimental conditions, hyperparameters, benchmark datasets, and sample sizes necessary for rigorous research.
+            </p>
+          </div>
+          <div class="cs-card">
+            <div class="cs-card-badge indigo">Pain Point 3</div>
+            <h4 class="cs-card-title">Opaque Ingestion States</h4>
+            <p class="cs-card-text">
+              Users are left guessing whether long PDF appendices, tables, and mathematical formulas were indexed or silently dropped during upload.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 3: Target Users -->
+      <section class="cs-doc-section reveal">
+        <div class="cs-section-num-tag">03 / Target Audience</div>
+        <h2 class="cs-doc-title">Primary User Segments</h2>
+        <div class="cs-cards-row">
+          <div class="cs-card persona-card">
+            <div class="persona-avatar-icon">🔬</div>
+            <h4 class="cs-card-title">The Graduate Researcher</h4>
+            <p class="persona-meta"><strong>Goal:</strong> Conducting systematic literature reviews across 30+ peer-reviewed papers.</p>
+            <p class="cs-card-text">
+              <strong>Need:</strong> Must cross-reference contradictory findings between papers and trace specific mathematical equations back to the original authors.
+            </p>
+          </div>
+          <div class="cs-card persona-card">
+            <div class="persona-avatar-icon">📚</div>
+            <h4 class="cs-card-title">The Engineering Student</h4>
+            <p class="persona-meta"><strong>Goal:</strong> Reviewing foundational computer science papers (e.g., Attention Is All You Need).</p>
+            <p class="cs-card-text">
+              <strong>Need:</strong> Wants an intuitive reading companion that clarifies complex terminology without oversimplifying or fabricating findings.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 4: Design Principles -->
+      <section class="cs-doc-section reveal">
+        <div class="cs-section-num-tag">04 / Design Principles</div>
+        <h2 class="cs-doc-title">Core UX Principles for AI Interaction</h2>
+        <div class="cs-table-wrapper">
+          <table class="cs-table">
+            <thead>
+              <tr>
+                <th>Principle</th>
+                <th>UX Execution in ResearchFlow</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Grounding Before Synthesis</strong></td>
+                <td>Synthesized responses always lead with citations and confidence metrics before prose explanations.</td>
+              </tr>
+              <tr>
+                <td><strong>Bidirectional Traceability</strong></td>
+                <td>Every citation is clickable; the PDF viewport immediately scrolls to the exact paragraph and applies a subtle glowing pulse.</td>
+              </tr>
+              <tr>
+                <td><strong>Transparent Ingestion Pipeline</strong></td>
+                <td>Upload modal breaks parsing into visible stages: <em>Parsing PDF → Chunking Sections → Vector Indexing → Ready</em>.</td>
+              </tr>
+              <tr>
+                <td><strong>Honest Negative Proofs</strong></td>
+                <td>When a query cannot be answered by the uploaded documents, ResearchFlow issues an amber notice rather than hallucinating an answer.</td>
+              </tr>
+              <tr>
+                <td><strong>Cognitive Calmness</strong></td>
+                <td>Deep navy surfaces (`#0A0F1E`) paired with electric indigo highlights create a distraction-free environment for intensive reading sessions.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- Section 5: Information Architecture & Flows -->
+      <section class="cs-doc-section reveal">
+        <div class="cs-section-num-tag">05 / Information Architecture</div>
+        <h2 class="cs-doc-title">Split-Screen Workspace Architecture</h2>
+        <p class="cs-paragraph">
+          The layout solves the context-switching penalty by placing the reading canvas and conversational intelligence side-by-side:
+        </p>
+        <div class="cs-journey-steps">
+          <div class="cs-step-card">
+            <span class="step-num">Left Sidebar</span>
+            <strong>Document Library</strong>
+            <p>Active document scopes, multi-doc selectors, session history, and IndexedDB cache indicators.</p>
+          </div>
+          <div class="cs-step-card">
+            <span class="step-num">Center Pane</span>
+            <strong>Synchronized Reader</strong>
+            <p>Page navigation, in-document search, zoom controls, and interactive highlight pulses triggered by chat.</p>
+          </div>
+          <div class="cs-step-card">
+            <span class="step-num">Right Pane</span>
+            <strong>Research Conversation</strong>
+            <p>Citation cards with match percentages, executive syntheses, and suggested follow-up queries.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 6: Key Interaction Decisions -->
+      <section class="cs-doc-section reveal">
+        <div class="cs-section-num-tag">06 / Key Interactions</div>
+        <h2 class="cs-doc-title">Key Interaction Decisions & Edge Case Handling</h2>
+        <div class="cs-decisions-grid">
+          <div class="cs-decision-card">
+            <h4>1. Citation Auto-Scroll with Pulsing Glow</h4>
+            <p>Clicking <code>[1] Attention Is All You Need • Page 1</code> in the chat triggers smooth auto-scrolling on the left reader canvas and flashes a soft indigo pulse around the matching paragraph for 1.8 seconds.</p>
+          </div>
+          <div class="cs-decision-card">
+            <h4>2. Transparent "Non-Speculation" Alert</h4>
+            <p>If a question asks about details not present in the ingested papers (e.g. training compute costs), the UI surfaces an honest badge: <em>"No direct evidence found in active documents. Model refused speculation to prevent hallucination."</em></p>
+          </div>
+          <div class="cs-decision-card">
+            <h4>3. Curated Starter Papers for Instant Testing</h4>
+            <p>To eliminate empty-state friction, ResearchFlow comes pre-loaded with canonical open-access papers (Vaswani et al. Transformer paper, Climate Action reports) allowing recruiters to immediately experience the synchronized workflow.</p>
+          </div>
+          <div class="cs-decision-card">
+            <h4>4. Follow-Up Query Suggestions</h4>
+            <p>Each synthesis concludes with three contextual inquiry chips (e.g., <em>"How does Scaled Dot-Product Attention prevent vanishing gradients?"</em>), guiding the user into deeper literature exploration.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 7: Accessibility & Technical Quality -->
+      <section class="cs-doc-section reveal">
+        <div class="cs-section-num-tag">07 / Accessibility & Code Quality</div>
+        <h2 class="cs-doc-title">Accessibility & Frontend Engineering Standards</h2>
+        <ul class="cs-bullet-list">
+          <li><strong>Keyboard Focus Traversal:</strong> Researchers can navigate from query input to citation badges and reader pages entirely using standard keyboard shortcuts.</li>
+          <li><strong>High Contrast Ratio:</strong> Typography in Inter and Space Grotesk adheres to strict WCAG 2.1 AA guidelines on dark surface tokens.</li>
+          <li><strong>Responsive Collapsible Panes:</strong> On tablet viewports, the side panels collapse into accessible drawer tabs to maximize reading real estate.</li>
+          <li><strong>Client-Side Storage:</strong> Utilizes browser IndexedDB for instant session reloads without requiring server round-trips.</li>
+        </ul>
+      </section>
+
+      <!-- Section 8: Honest Evaluation & Learnings -->
+      <section class="cs-doc-section reveal">
+        <div class="cs-section-num-tag">08 / Reflection & Validation</div>
+        <h2 class="cs-doc-title">Prototype Status & Future Iterations</h2>
+        <div class="cs-callout-box">
+          <h4>Honest Prototype Labeling</h4>
+          <p>
+            ResearchFlow is an interactive product design prototype demonstrating innovative UX patterns for citation-grounded research. It uses client-side simulated retrieval to illustrate split-screen synchronization, citation jumping, and anti-hallucination states.
+          </p>
+          <div style="margin-top:14px;">
+            <strong>Next Iterations:</strong>
+            <ul style="margin-top:8px; margin-left:20px; line-height:1.6;">
+              <li>Integration with local WebAssembly-based vector embeddings for offline PDF search.</li>
+              <li>Multi-document comparative matrix allowing simultaneous side-by-side citation across two research papers.</li>
+              <li>Exporting verified literature review sections with BibTeX citations.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Case Study Footer Navigation -->
+      <nav class="cs-bottom-nav reveal" aria-label="Next Case Study">
+        <a href="case-study-resumeiq.html" class="cs-nav-btn secondary">
+          <span>← Previous: ResumeIQ</span>
+        </a>
+        <a href="case-study-queueless.html" class="cs-nav-btn primary">
+          <span>Next Project: QueueLess Campus (Mobile UX) →</span>
+        </a>
+      </nav>
+
+    </article>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>© <span id="copyrightYear">2026</span> Navya Pathak · UI/UX Designer & Front-End Developer.</div>
+      <div>Designed with empathy, verified with code.</div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

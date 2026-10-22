@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Navya Pathak — UI/UX Designer & Front-End Developer. B.Tech Computer Science student building intuitive digital experiences, accessible interfaces, and functional web applications.">
-  <meta name="keywords" content="Navya Pathak, UI/UX Designer, Front-End Developer, Product Designer, Portfolio, ResumeIQ, BML Munjal University, IIT Mandi">
+  <meta name="description" content="Navya Pathak — UI/UX Designer & Front-End Developer. B.Tech Computer Science student crafting intuitive digital experiences, accessible design systems, and thoughtful human-centered interfaces.">
+  <meta name="keywords" content="Navya Pathak, UI/UX Designer, Front-End Developer, Product Designer, Portfolio, ResumeIQ, ResearchFlow, QueueLess Campus, BML Munjal University, IIT Mandi">
   <meta name="author" content="Navya Pathak">
   
   <!-- Open Graph / Social Media Meta Tags -->
   <meta property="og:title" content="Navya Pathak — UI/UX Designer & Front-End Developer">
-  <meta property="og:description" content="Designing thoughtful digital experiences and turning complex problems into clear, accessible, and engaging interfaces.">
+  <meta property="og:description" content="Designing thoughtful digital experiences and turning complex problems into clear, accessible, and intuitive interfaces.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://navya-pathak-portfolio.netlify.app">
   <meta property="og:image" content="assets/images/navya-pathak.jpg">
@@ -39,11 +39,10 @@
 
       <!-- Desktop Links -->
       <ul class="nav-links">
+        <li><a href="#home" class="nav-link">Home</a></li>
         <li><a href="#work" class="nav-link">Work</a></li>
-        <li><a href="#case-study" class="nav-link open-cs-modal-trigger">Case Study</a></li>
         <li><a href="#about" class="nav-link">About</a></li>
-        <li><a href="#skills" class="nav-link">Skills</a></li>
-        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#process" class="nav-link">Process</a></li>
         <li><a href="#contact" class="nav-link">Contact</a></li>
       </ul>
 
@@ -67,15 +66,16 @@
   <!-- Mobile Drawer Menu -->
   <div id="mobileDrawer" class="mobile-drawer" aria-hidden="true">
     <ul class="mobile-nav-links">
+      <li><a href="#home" class="mobile-nav-link">Home</a></li>
       <li><a href="#work" class="mobile-nav-link">Work</a></li>
-      <li><a href="#case-study" class="mobile-nav-link open-cs-modal-trigger">ResumeIQ Case Study</a></li>
       <li><a href="#about" class="mobile-nav-link">About Me</a></li>
+      <li><a href="#process" class="mobile-nav-link">Design Process</a></li>
       <li><a href="#skills" class="mobile-nav-link">Skills & Stack</a></li>
       <li><a href="#experience" class="mobile-nav-link">Experience</a></li>
       <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
     </ul>
-    <div style="margin-top:auto;">
-      <a href="#contact" class="btn btn-primary" style="width:100%; text-align:center;">Get in Touch</a>
+    <div style="margin-top:auto; padding-top:20px;">
+      <a href="#contact" class="btn btn-primary" style="width:100%; text-align:center;">Let's Connect</a>
     </div>
   </div>
 
@@ -105,7 +105,7 @@
           </div>
 
           <p class="hero-intro">
-            I design intuitive digital experiences and bring them to life through thoughtful frontend development. I enjoy turning complex problems into clear, accessible, and engaging interfaces.
+            I'm Navya, a UI/UX designer and Computer Science student passionate about turning complex problems into clear, thoughtful digital experiences. I combine user-centered design, visual storytelling, and frontend development to create products that are both useful and intuitive.
           </p>
 
           <div class="hero-ctas">
@@ -180,21 +180,21 @@
     <!-- ======================================================================
          FEATURED CASE STUDY SPOTLIGHT: RESUMEIQ
          ====================================================================== -->
-    <section id="case-study" class="section-spacing" style="padding-top:20px;">
+    <section class="section-spacing" style="padding-top:20px;">
       <div class="container">
         <div class="case-study-feature-banner reveal">
           <div class="banner-grid">
             <div>
-              <span class="case-study-tag">Featured UI/UX Concept Project</span>
-              <h2 class="case-study-title">ResumeIQ — Career Intelligence Dashboard</h2>
+              <span class="case-study-tag">Featured UI/UX Project · 01</span>
+              <h2 class="case-study-title">ResumeIQ — Career Intelligence Platform</h2>
               <p class="case-study-desc">
-                An end-to-end design concept created to solve ATS opacity for job seekers. Features semantic match scoring, transparent skill-gap visualization, and actionable resume optimization recommendations.
+                An end-to-end career intelligence platform that helps job seekers understand resume alignment, identify skill gaps, and discover actionable improvements through explainable evidence matching.
               </p>
 
               <div class="case-study-metrics">
                 <div class="metric-item">
                   <strong>88%</strong>
-                  <span>Average Match Score Clarity</span>
+                  <span>Average Match Readiness</span>
                 </div>
                 <div class="metric-item">
                   <strong>6 Screens</strong>
@@ -206,13 +206,16 @@
                 </div>
               </div>
 
-              <div style="display:flex; gap:14px; flex-wrap:wrap;">
-                <button class="btn btn-primary open-cs-modal-trigger" id="openCaseStudyBtn">
-                  <span>Read Full Case Study</span>
+              <div style="display:flex; gap:14px; flex-wrap:wrap; margin-top:20px;">
+                <a href="case-study-resumeiq.html" class="btn btn-primary">
+                  <span>View Dedicated Case Study</span>
                   <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+                <button class="btn btn-secondary open-cs-modal-trigger">
+                  <span>Quick In-Page Preview</span>
                 </button>
-                <a href="https://github.com/navyapathak/ResumeIQ" target="_blank" rel="noopener" class="btn btn-secondary">
-                  <span>GitHub Repository</span>
+                <a href="https://github.com/navyapathak/ResumeIQ-UI-UX" target="_blank" rel="noopener" class="btn btn-secondary" aria-label="ResumeIQ GitHub Repository">
+                  <span>GitHub</span>
                   <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
                 </a>
               </div>
@@ -266,67 +269,70 @@
     </section>
 
     <!-- ======================================================================
-         SELECTED PROJECTS GALLERY
+         SELECTED WORK — 3 FEATURED UI/UX PROJECTS ONLY
          ====================================================================== -->
     <section id="work" class="section-spacing">
       <div class="container">
         <div class="section-header reveal">
           <div class="section-eyebrow">
             <span class="dot"></span>
-            01 — Portfolio Showcase
+            Featured Work
           </div>
-          <h2 class="section-title">Selected projects & digital experiences.</h2>
+          <h2 class="section-title">Selected UI/UX product designs.</h2>
           <p class="section-subtitle">
-            Curated applications combining user-centered interface design, clean frontend engineering, and structured problem solving.
+            Curated digital products combining rigorous user research, intuitive interface architecture, and clean frontend implementation.
           </p>
         </div>
 
         <div class="projects-grid">
-          <!-- Project 1: ResumeIQ -->
+          <!-- PROJECT 01: ResumeIQ -->
           <article class="project-card reveal">
-            <div class="project-preview">
-              <div class="ui-mockup-screen">
-                <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px;">
-                  <span style="font-size:0.7rem; font-weight:700; color:var(--accent-light); text-transform:uppercase; letter-spacing:0.05em;">ResumeIQ Dashboard</span>
-                  <span style="font-size:0.7rem; background:#10B981; color:#0A0F1E; font-weight:700; padding:2px 8px; border-radius:4px;">ATS Verified</span>
-                </div>
-                <div style="background:var(--bg-surface); padding:12px; border-radius:6px; border:1px solid var(--border-light); margin-bottom:8px;">
-                  <div style="font-size:0.72rem; color:var(--text-muted);">Candidate: Navya Pathak · Match Readiness</div>
-                  <div style="display:flex; align-items:baseline; gap:8px; margin-top:4px;">
-                    <span style="font-family:var(--font-heading); font-size:1.4rem; font-weight:700; color:#FFFFFF;">88/100</span>
-                    <span style="font-size:0.75rem; color:#10B981;">Strong Alignment with Job Description</span>
-                  </div>
-                </div>
-                <div style="display:flex; gap:6px; flex-wrap:wrap;">
-                  <span style="font-size:0.68rem; padding:3px 8px; background:var(--accent-subtle); color:var(--accent-light); border-radius:4px;">Keywords: 94%</span>
-                  <span style="font-size:0.68rem; padding:3px 8px; background:var(--accent-subtle); color:var(--accent-light); border-radius:4px;">Quantified Impact: 82%</span>
-                  <span style="font-size:0.68rem; padding:3px 8px; background:var(--accent-subtle); color:var(--accent-light); border-radius:4px;">Design Principles: 96%</span>
-                </div>
-              </div>
+            <div class="project-preview-img-wrap">
+              <span class="project-num-badge">PROJECT 01</span>
+              <img 
+                src="assets/images/projects/resumeiq-hero.png" 
+                alt="ResumeIQ — Career Intelligence Platform Interface Preview" 
+                class="project-preview-img"
+                loading="lazy"
+              >
             </div>
 
             <div class="project-content">
               <div class="project-meta">
-                <span class="project-category">Product Design & Frontend</span>
-                <span class="project-role">Lead Designer & Engineer</span>
+                <span class="project-category">Product Design · Dashboard UX · Data Visualization</span>
+                <span class="project-role">Lead Product Designer</span>
               </div>
-              <h3 class="project-title">ResumeIQ — Resume Intelligence Platform</h3>
+              <h3 class="project-title">ResumeIQ — Career Intelligence Platform</h3>
               <p class="project-description">
-                A career intelligence platform designed to help job seekers understand resume relevance, identify skill gaps, and discover actionable improvements through explainable AI scoring.
+                A career intelligence platform that helps job seekers understand resume alignment, identify skill gaps, and discover actionable improvements.
               </p>
+
+              <!-- Key Highlights -->
+              <div style="margin-bottom:18px;">
+                <div style="font-size:0.78rem; color:var(--accent-light); font-weight:600; margin-bottom:6px; text-transform:uppercase; letter-spacing:0.04em;">Key Highlights:</div>
+                <ul style="font-size:0.85rem; color:var(--text-secondary); line-height:1.5; padding-left:18px; margin:0;">
+                  <li>Resume upload & transparent ATS match-score calculation.</li>
+                  <li>Skill-gap matrix differentiating must-haves from bonus qualifications.</li>
+                  <li>Actionable before-and-after bullet rewrites with Google XYZ framing.</li>
+                  <li>Reusable component design system built with WCAG AA compliance.</li>
+                </ul>
+              </div>
+
               <div class="project-tags">
-                <span class="project-tag">Next.js</span>
+                <span class="project-tag">Product Design</span>
+                <span class="project-tag">Dashboard UX</span>
+                <span class="project-tag">Figma</span>
                 <span class="project-tag">React</span>
                 <span class="project-tag">TypeScript</span>
                 <span class="project-tag">Tailwind CSS</span>
-                <span class="project-tag">UI/UX Concept</span>
               </div>
+
               <div class="project-actions">
-                <button class="project-link-btn open-cs-modal-trigger" style="background:none; border:none; cursor:pointer;">
+                <a href="case-study-resumeiq.html" class="project-link-btn">
                   <span>View Case Study</span>
                   <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-                </button>
-                <a href="https://github.com/navyapathak/ResumeIQ" target="_blank" rel="noopener" class="project-github-btn" aria-label="ResumeIQ GitHub Repository">
+                </a>
+                <a href="https://github.com/navyapathak/ResumeIQ-UI-UX" target="_blank" rel="noopener" class="project-github-btn" aria-label="ResumeIQ GitHub Repository">
                   <span>GitHub</span>
                   <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
                 </a>
@@ -334,47 +340,54 @@
             </div>
           </article>
 
-          <!-- Project 2: Multimodal RAG Research Assistant -->
+          <!-- PROJECT 02: ResearchFlow -->
           <article class="project-card reveal">
-            <div class="project-preview">
-              <div class="ui-mockup-screen">
-                <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px;">
-                  <span style="font-size:0.7rem; font-weight:700; color:var(--accent-light); text-transform:uppercase; letter-spacing:0.05em;">Research Assistant Workspace</span>
-                  <span style="font-size:0.7rem; background:rgba(99,102,241,0.2); color:var(--accent-light); padding:2px 8px; border-radius:4px;">FAISS + LangChain</span>
-                </div>
-                <div style="background:var(--bg-surface); padding:10px 12px; border-radius:6px; border:1px solid var(--border-light); margin-bottom:8px;">
-                  <div style="font-size:0.72rem; color:var(--text-muted);">Q: "What are the primary latency bottlenecks in transformer inference?"</div>
-                  <div style="font-size:0.78rem; color:#FFFFFF; margin-top:4px;">"Memory bandwidth during autoregressive decoding is the dominant constraint... [Doc Page 14, Sec 3.2]"</div>
-                </div>
-                <div style="display:flex; gap:6px;">
-                  <span style="font-size:0.68rem; padding:2px 6px; background:rgba(16,185,129,0.15); color:#10B981; border-radius:4px;">Grounding Confidence: 96%</span>
-                  <span style="font-size:0.68rem; padding:2px 6px; background:var(--lavender-subtle); color:var(--text-secondary); border-radius:4px;">3 Citations Verified</span>
-                </div>
-              </div>
+            <div class="project-preview-img-wrap">
+              <span class="project-num-badge">PROJECT 02</span>
+              <img 
+                src="assets/images/projects/researchflow-hero.png" 
+                alt="ResearchFlow — AI Research Workspace Interface Preview" 
+                class="project-preview-img"
+                loading="lazy"
+              >
             </div>
 
             <div class="project-content">
               <div class="project-meta">
-                <span class="project-category">AI Interface & Full Stack</span>
-                <span class="project-role">Frontend & Pipeline Integration</span>
+                <span class="project-category">Interaction Design · Information Architecture · AI UX</span>
+                <span class="project-role">UX & Interaction Architect</span>
               </div>
-              <h3 class="project-title">Multimodal RAG Research Assistant</h3>
+              <h3 class="project-title">ResearchFlow — AI Research Workspace</h3>
               <p class="project-description">
-                An interactive research assistant that helps users explore uploaded documents, ask questions, and inspect source-grounded answers with verifiable citation links.
+                An AI research workspace designed to make document exploration, question answering, and source verification clearer and more intuitive.
               </p>
+
+              <!-- Key Highlights -->
+              <div style="margin-bottom:18px;">
+                <div style="font-size:0.78rem; color:var(--accent-light); font-weight:600; margin-bottom:6px; text-transform:uppercase; letter-spacing:0.04em;">Key Highlights:</div>
+                <ul style="font-size:0.85rem; color:var(--text-secondary); line-height:1.5; padding-left:18px; margin:0;">
+                  <li>Synchronized split-screen PDF reader and research chat canvas.</li>
+                  <li>Bidirectional citation clicking that scrolls reader and pulses evidence.</li>
+                  <li>Multi-stage document ingestion pipeline with clear processing states.</li>
+                  <li>Transparent non-speculation warnings when evidence is missing.</li>
+                </ul>
+              </div>
+
               <div class="project-tags">
+                <span class="project-tag">AI Interaction</span>
+                <span class="project-tag">Information Architecture</span>
                 <span class="project-tag">React</span>
-                <span class="project-tag">FastAPI</span>
-                <span class="project-tag">Python</span>
-                <span class="project-tag">LangChain</span>
-                <span class="project-tag">FAISS</span>
+                <span class="project-tag">TypeScript</span>
+                <span class="project-tag">IndexedDB</span>
+                <span class="project-tag">Tailwind CSS</span>
               </div>
+
               <div class="project-actions">
-                <a href="https://github.com/navyapathak/multimodal-rag-research-assistant" target="_blank" rel="noopener" class="project-link-btn">
-                  <span>Inspect Interface</span>
+                <a href="case-study-researchflow.html" class="project-link-btn">
+                  <span>View Case Study</span>
                   <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
                 </a>
-                <a href="https://github.com/navyapathak/multimodal-rag-research-assistant" target="_blank" rel="noopener" class="project-github-btn" aria-label="Multimodal RAG GitHub Repository">
+                <a href="https://github.com/navyapathak/Research-Flow" target="_blank" rel="noopener" class="project-github-btn" aria-label="ResearchFlow GitHub Repository">
                   <span>GitHub</span>
                   <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
                 </a>
@@ -382,97 +395,54 @@
             </div>
           </article>
 
-          <!-- Project 3: ML-Based Resume–Job Matching Platform -->
-          <article class="project-card reveal">
-            <div class="project-preview">
-              <div class="ui-mockup-screen">
-                <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px;">
-                  <span style="font-size:0.7rem; font-weight:700; color:var(--accent-light); text-transform:uppercase; letter-spacing:0.05em;">Skill Gap Analysis</span>
-                  <span style="font-size:0.7rem; background:rgba(245,158,11,0.15); color:#F59E0B; padding:2px 8px; border-radius:4px;">NLP Similarity</span>
-                </div>
-                <div style="display:grid; grid-template-columns:1fr 1fr; gap:8px; margin-bottom:8px;">
-                  <div style="background:var(--bg-surface); padding:8px; border-radius:6px; border:1px solid var(--border-light);">
-                    <div style="font-size:0.7rem; color:var(--text-muted);">Required Skills (JD)</div>
-                    <div style="font-size:0.72rem; color:#FFFFFF; margin-top:2px;">Python, Scikit-learn, SQL, Docker, FastAPI</div>
-                  </div>
-                  <div style="background:var(--bg-surface); padding:8px; border-radius:6px; border:1px solid var(--border-light);">
-                    <div style="font-size:0.7rem; color:var(--text-muted);">Candidate Match</div>
-                    <div style="font-size:0.72rem; color:#10B981; margin-top:2px;">4 Matched / 1 Missing</div>
-                  </div>
-                </div>
-                <div style="font-size:0.72rem; color:var(--text-secondary);">Action: Bridge Docker containerization gap to achieve 95% role compatibility score.</div>
-              </div>
+          <!-- PROJECT 03: QueueLess Campus -->
+          <article class="project-card reveal" style="grid-column: 1 / -1; max-width: 900px; margin-inline: auto; width: 100%;">
+            <div class="project-preview-img-wrap" style="height: 320px;">
+              <span class="project-num-badge">PROJECT 03</span>
+              <img 
+                src="assets/images/projects/queueless-hero.png" 
+                alt="QueueLess Campus — Smart Campus Queue Management Interface Preview" 
+                class="project-preview-img"
+                loading="lazy"
+              >
             </div>
 
             <div class="project-content">
               <div class="project-meta">
-                <span class="project-category">NLP & Data Visualization</span>
-                <span class="project-role">Algorithm & UI Visualizer</span>
+                <span class="project-category">UX Research · Mobile Product Design · Prototyping</span>
+                <span class="project-role">Lead UX Researcher & Designer</span>
               </div>
-              <h3 class="project-title">ML-Based Resume–Job Matching Platform</h3>
+              <h3 class="project-title">QueueLess Campus — Smart Campus Queue Management</h3>
               <p class="project-description">
-                A resume-matching application that compares candidate skills with job requirements, computing vector similarity and presenting gaps in a structured visual format.
+                A student-focused campus service concept designed to simplify service discovery, appointment booking, and virtual queue tracking.
               </p>
-              <div class="project-tags">
-                <span class="project-tag">Python</span>
-                <span class="project-tag">NLP</span>
-                <span class="project-tag">Scikit-learn</span>
-                <span class="project-tag">Pandas</span>
-                <span class="project-tag">TF-IDF</span>
+
+              <!-- Key Highlights -->
+              <div style="margin-bottom:18px;">
+                <div style="font-size:0.78rem; color:var(--accent-light); font-weight:600; margin-bottom:6px; text-transform:uppercase; letter-spacing:0.04em;">Key Highlights:</div>
+                <ul style="font-size:0.85rem; color:var(--text-secondary); line-height:1.5; padding-left:18px; margin:0;">
+                  <li>Pre-flight document verification checklist preventing turned-away students.</li>
+                  <li>Virtual boarding-pass style ticket with live wait estimation.</li>
+                  <li>Desk interruption alerts when counter staff pause for lunch or meetings.</li>
+                  <li>Calm, unified staff dashboard for one-click student calling and queue control.</li>
+                </ul>
               </div>
+
+              <div class="project-tags">
+                <span class="project-tag">UX Research</span>
+                <span class="project-tag">Mobile-First UX</span>
+                <span class="project-tag">Service Design</span>
+                <span class="project-tag">Figma</span>
+                <span class="project-tag">React</span>
+                <span class="project-tag">TypeScript</span>
+              </div>
+
               <div class="project-actions">
-                <a href="https://github.com/navyapathak/Skill-Gap-Analysis" target="_blank" rel="noopener" class="project-link-btn">
-                  <span>View Details</span>
+                <a href="case-study-queueless.html" class="project-link-btn">
+                  <span>View Case Study</span>
                   <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
                 </a>
-                <a href="https://github.com/navyapathak/Skill-Gap-Analysis" target="_blank" rel="noopener" class="project-github-btn" aria-label="Skill Gap Analysis GitHub">
-                  <span>GitHub</span>
-                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
-                </a>
-              </div>
-            </div>
-          </article>
-
-          <!-- Project 4: AI Healthcare Risk Predictor & Chatbot -->
-          <article class="project-card reveal">
-            <div class="project-preview">
-              <div class="ui-mockup-screen">
-                <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px;">
-                  <span style="font-size:0.7rem; font-weight:700; color:var(--accent-light); text-transform:uppercase; letter-spacing:0.05em;">Clinical Risk Assistant</span>
-                  <span style="font-size:0.7rem; background:rgba(99,102,241,0.15); color:var(--accent-light); padding:2px 8px; border-radius:4px;">Transparent Disclosures</span>
-                </div>
-                <div style="background:var(--bg-surface); padding:10px 12px; border-radius:6px; border:1px solid var(--border-light); margin-bottom:8px;">
-                  <div style="font-size:0.72rem; color:var(--text-muted);">Assessment: Metabolic & Cardiovascular Markers</div>
-                  <div style="display:flex; justify-content:space-between; align-items:center; margin-top:4px;">
-                    <span style="font-size:0.78rem; color:#FFFFFF; font-weight:600;">Low-to-Moderate Probability (14%)</span>
-                    <span style="font-size:0.7rem; color:var(--text-muted);">CI: 95%</span>
-                  </div>
-                </div>
-                <div style="font-size:0.68rem; color:var(--text-muted); font-style:italic;">* Informational guidance intended to support, not replace, clinical diagnosis.</div>
-              </div>
-            </div>
-
-            <div class="project-content">
-              <div class="project-meta">
-                <span class="project-category">Accessible Health UI</span>
-                <span class="project-role">UX Flow & ML Modeling</span>
-              </div>
-              <h3 class="project-title">AI Healthcare Risk Predictor & Chatbot</h3>
-              <p class="project-description">
-                A clean, accessible healthcare risk prediction interface using machine-learning classification and conversational guidance with appropriately qualified health outputs.
-              </p>
-              <div class="project-tags">
-                <span class="project-tag">Python</span>
-                <span class="project-tag">Machine Learning</span>
-                <span class="project-tag">Accessible UX</span>
-                <span class="project-tag">Streamlit/FastAPI</span>
-              </div>
-              <div class="project-actions">
-                <a href="https://github.com/navyapathak/AI-Heath-Predictor" target="_blank" rel="noopener" class="project-link-btn">
-                  <span>View Details</span>
-                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-                </a>
-                <a href="https://github.com/navyapathak/AI-Heath-Predictor" target="_blank" rel="noopener" class="project-github-btn" aria-label="AI Health Predictor GitHub">
+                <a href="https://github.com/navyapathak/queueless-campus" target="_blank" rel="noopener" class="project-github-btn" aria-label="QueueLess Campus GitHub Repository">
                   <span>GitHub</span>
                   <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
                 </a>
@@ -484,14 +454,172 @@
     </section>
 
     <!-- ======================================================================
-         ABOUT SECTION
+         DESIGN PROCESS SECTION
+         ====================================================================== -->
+    <section id="process" class="section-spacing">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="section-eyebrow">
+            <span class="dot"></span>
+            Methodology
+          </div>
+          <h2 class="section-title">My design process.</h2>
+          <p class="section-subtitle">
+            A structured, iterative approach that connects human empathy and problem framing with code-ready frontend execution.
+          </p>
+        </div>
+
+        <div class="process-grid">
+          <!-- 01 Discover -->
+          <div class="process-step-card reveal">
+            <div class="process-step-header">
+              <span class="process-num">01</span>
+              <span class="badge badge-subtle">Empathy</span>
+            </div>
+            <h3 class="process-stage-name">Discover</h3>
+            <p class="process-stage-desc">
+              Uncovering real user friction before jumping to solutions. Listening to user frustrations, conducting contextual inquiries, and studying workflow bottlenecks.
+            </p>
+            <ul class="process-stage-methods">
+              <li>User Interviews & Contextual Inquiry</li>
+              <li>Workflow Friction Mapping</li>
+              <li>Competitive Heuristic Analysis</li>
+            </ul>
+          </div>
+
+          <!-- 02 Define -->
+          <div class="process-step-card reveal">
+            <div class="process-step-header">
+              <span class="process-num">02</span>
+              <span class="badge badge-subtle">Strategy</span>
+            </div>
+            <h3 class="process-stage-name">Define</h3>
+            <p class="process-stage-desc">
+              Transforming raw findings into clear problem statements, actionable user personas, and defensible design hypotheses with measurable success criteria.
+            </p>
+            <ul class="process-stage-methods">
+              <li>Problem Statement Framing</li>
+              <li>User Personas & Mental Models</li>
+              <li>Information Architecture (IA)</li>
+            </ul>
+          </div>
+
+          <!-- 03 Explore -->
+          <div class="process-step-card reveal">
+            <div class="process-step-header">
+              <span class="process-num">03</span>
+              <span class="badge badge-subtle">Ideation</span>
+            </div>
+            <h3 class="process-stage-name">Explore</h3>
+            <p class="process-stage-desc">
+              Rapidly iterating through low-fidelity wireframes, user flow diagrams, and multiple layout variations to discover the most intuitive structural pathways.
+            </p>
+            <ul class="process-stage-methods">
+              <li>Low-Fidelity Wireframing</li>
+              <li>User Flow Diagrams</li>
+              <li>Layout & Hierarchy Explorations</li>
+            </ul>
+          </div>
+
+          <!-- 04 Prototype -->
+          <div class="process-step-card reveal">
+            <div class="process-step-header">
+              <span class="process-num">04</span>
+              <span class="badge badge-subtle">Execution</span>
+            </div>
+            <h3 class="process-stage-name">Prototype</h3>
+            <p class="process-stage-desc">
+              Bridging design and engineering. Crafting high-fidelity interactive prototypes in Figma and translating them into responsive, production-ready React/TypeScript interfaces.
+            </p>
+            <ul class="process-stage-methods">
+              <li>High-Fidelity Component Systems</li>
+              <li>Figma Auto-Layout & Variants</li>
+              <li>Functional Code Prototyping (React)</li>
+            </ul>
+          </div>
+
+          <!-- 05 Validate -->
+          <div class="process-step-card reveal">
+            <div class="process-step-header">
+              <span class="process-num">05</span>
+              <span class="badge badge-subtle">Testing</span>
+            </div>
+            <h3 class="process-stage-name">Validate</h3>
+            <p class="process-stage-desc">
+              Subjecting designs to cognitive walkthroughs, task completion evaluation, and strict accessibility auditing (WCAG 2.1 AA) before shipping.
+            </p>
+            <ul class="process-stage-methods">
+              <li>Usability Task Benchmarking</li>
+              <li>Accessibility & Contrast Audits</li>
+              <li>Heuristic Evaluation</li>
+            </ul>
+          </div>
+
+          <!-- 06 Refine -->
+          <div class="process-step-card reveal">
+            <div class="process-step-header">
+              <span class="process-num">06</span>
+              <span class="badge badge-subtle">Polish</span>
+            </div>
+            <h3 class="process-stage-name">Refine</h3>
+            <p class="process-stage-desc">
+              Polishing microinteractions, edge cases, loading skeletons, and responsive breakpoints to deliver a cohesive, delight-inducing product experience.
+            </p>
+            <ul class="process-stage-methods">
+              <li>Microinteractions & Transitions</li>
+              <li>Error & Empty State Design</li>
+              <li>Design Tokens & Tokenization</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Project Process Application Matrix -->
+        <div class="process-project-matrix reveal">
+          <h3 class="matrix-title">Project Process Application</h3>
+          <p class="matrix-subtitle">
+            A transparent overview of the design activities executed across each featured project:
+          </p>
+          <div class="cs-table-wrapper">
+            <table class="cs-table">
+              <thead>
+                <tr>
+                  <th>Featured Project</th>
+                  <th>Primary Stages Completed</th>
+                  <th>Core Focus & Artifacts</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>ResumeIQ</strong></td>
+                  <td><span class="badge badge-subtle">Discover → Define → Explore → Prototype → Refine</span></td>
+                  <td>ATS opacity research, dashboard information architecture, actionable bullet rewriter diff, React/TypeScript working application.</td>
+                </tr>
+                <tr>
+                  <td><strong>ResearchFlow</strong></td>
+                  <td><span class="badge badge-subtle">Define → Explore → Prototype → Refine</span></td>
+                  <td>AI epistemic trust discovery, synchronized dual-pane workspace, clickable bidirectional citations, non-speculation warnings.</td>
+                </tr>
+                <tr>
+                  <td><strong>QueueLess Campus</strong></td>
+                  <td><span class="badge badge-subtle">Discover → Define → Explore → Prototype</span></td>
+                  <td>On-campus hallway queue interviews, service desk mapping, mobile boarding pass ticket UX, real-time staff operations desk.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         ABOUT ME SECTION
          ====================================================================== -->
     <section id="about" class="section-spacing">
       <div class="container">
         <div class="section-header reveal">
           <div class="section-eyebrow">
             <span class="dot"></span>
-            02 — Personal Philosophy
+            About Me
           </div>
           <h2 class="section-title">Design rooted in empathy, built with code.</h2>
         </div>
@@ -500,11 +628,11 @@
           <!-- Narrative & Pillars -->
           <div class="about-narrative reveal">
             <p class="about-lead">
-              “I'm Navya Pathak, a Computer Science student interested in creating digital products that combine thoughtful design with practical technology. I enjoy understanding user problems, organizing complex information, and building intuitive interfaces that feel clear, useful, and engaging.”
+              “I'm Navya Pathak, a Computer Science student interested in designing products that combine thoughtful user experiences with practical technology. I enjoy simplifying complex information, exploring interaction patterns, and turning ideas into intuitive interfaces.”
             </p>
             
             <p>
-              My computer science and frontend background is one of my greatest assets as a designer: when I sketch a layout in Figma, I know how the CSS flexbox, grid, accessibility tree, and state management work behind the scenes. This enables me to design interfaces that are not only visually captivating, but also structurally sound and realistic to build.
+              My computer science and frontend background is one of my greatest assets as a designer: when I sketch a layout in Figma, I know how the CSS flexbox, grid, accessibility tree, and state management work behind the scenes. This enables me to design interfaces that are not only visually captivating, but also structurally sound, accessible, and realistic to build.
             </p>
 
             <div class="about-pillars">
@@ -533,8 +661,8 @@
                   <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
                 </div>
                 <div class="pillar-content">
-                  <h4>Data & Technical Literacy</h4>
-                  <p>Leveraging knowledge from AI/ML and data structures to build transparent, explainable interfaces for complex data and intelligent products.</p>
+                  <h4>Information & Visual Hierarchy</h4>
+                  <p>Organizing dense datasets, research synthesis, and workflow statuses into scannable, calm, and delightful interfaces.</p>
                 </div>
               </div>
             </div>
@@ -544,19 +672,19 @@
           <div class="about-stats-panel reveal">
             <div class="stat-box">
               <span class="stat-num">UI/UX</span>
-              <span class="stat-label">Primary identity & passion: crafting human-centered digital experiences</span>
+              <span class="stat-label">Primary focus: human-centered product & interaction design</span>
             </div>
             <div class="stat-box">
               <span class="stat-num">2027</span>
-              <span class="stat-label">B.Tech Computer Science graduate from BML Munjal University</span>
+              <span class="stat-label">B.Tech Computer Science student at BML Munjal University</span>
             </div>
             <div class="stat-box">
-              <span class="stat-num">2+</span>
-              <span class="stat-label">Industry internships completed across UI/UX, MERN & AI/ML</span>
+              <span class="stat-num">2</span>
+              <span class="stat-label">Industry internships completed across UI/UX, MERN & AI data analysis</span>
             </div>
             <div class="stat-box">
-              <span class="stat-num">7.65</span>
-              <span class="stat-label">Academic CGPA across engineering and design fundamentals</span>
+              <span class="stat-num">WCAG AA</span>
+              <span class="stat-label">Committed to universal accessibility and keyboard ergonomics</span>
             </div>
 
             <!-- IIT Mandi Minor Distinction -->
@@ -577,45 +705,61 @@
     </section>
 
     <!-- ======================================================================
-         SKILLS & TOOLKIT SECTION
+         SKILLS SECTION
          ====================================================================== -->
     <section id="skills" class="section-spacing">
       <div class="container">
         <div class="section-header reveal">
           <div class="section-eyebrow">
             <span class="dot"></span>
-            03 — Skills & Capabilities
+            Capabilities
           </div>
-          <h2 class="section-title">Organized toolkit & technical stack.</h2>
+          <h2 class="section-title">Skills & capabilities.</h2>
           <p class="section-subtitle">
-            Focused, verified capabilities across user experience design, design tools, modern frontend development, and supporting technologies.
+            Carefully organized capabilities across user experience design, visual systems, design tools, and modern frontend development.
           </p>
         </div>
 
         <div class="skills-grid">
-          <!-- Group 1: UI/UX Design -->
+          <!-- Group 1: UX and Product Design -->
           <div class="skill-group-card reveal">
             <div class="skill-group-header">
               <div class="skill-group-icon">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path></svg>
               </div>
-              <h3 class="skill-group-title">UI/UX Design</h3>
+              <h3 class="skill-group-title">UX and Product Design</h3>
             </div>
             <div class="skill-pills-list">
               <span class="skill-pill">User-Centered Design</span>
               <span class="skill-pill">Wireframing</span>
-              <span class="skill-pill">Interactive Prototyping</span>
+              <span class="skill-pill">Prototyping</span>
               <span class="skill-pill">User Flows</span>
               <span class="skill-pill">Information Architecture</span>
-              <span class="skill-pill">Visual Hierarchy</span>
-              <span class="skill-pill">Responsive Layouts</span>
               <span class="skill-pill">Usability Testing</span>
-              <span class="skill-pill">Accessibility (WCAG 2.1)</span>
-              <span class="skill-pill">Design Systems</span>
+              <span class="skill-pill">Accessibility</span>
+              <span class="skill-pill">Interaction Design</span>
             </div>
           </div>
 
-          <!-- Group 2: Design Tools -->
+          <!-- Group 2: UI and Visual Design -->
+          <div class="skill-group-card reveal">
+            <div class="skill-group-header">
+              <div class="skill-group-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              </div>
+              <h3 class="skill-group-title">UI and Visual Design</h3>
+            </div>
+            <div class="skill-pills-list">
+              <span class="skill-pill">Visual Hierarchy</span>
+              <span class="skill-pill">Typography</span>
+              <span class="skill-pill">Responsive Design</span>
+              <span class="skill-pill">Design Systems</span>
+              <span class="skill-pill">Component Design</span>
+              <span class="skill-pill">Interface Consistency</span>
+            </div>
+          </div>
+
+          <!-- Group 3: Design Tools -->
           <div class="skill-group-card reveal">
             <div class="skill-group-header">
               <div class="skill-group-icon">
@@ -625,50 +769,26 @@
             </div>
             <div class="skill-pills-list">
               <span class="skill-pill" style="color:var(--text-primary); font-weight:600;">Figma</span>
-              <span class="skill-pill">Auto Layout</span>
-              <span class="skill-pill">Component Variants</span>
-              <span class="skill-pill">Interactive Mockups</span>
               <span class="skill-pill">Canva</span>
-              <span class="skill-pill">Design Tokens</span>
-              <span class="skill-pill">Vector Graphics</span>
             </div>
           </div>
 
-          <!-- Group 3: Front-End Development -->
+          <!-- Group 4: Front-End Development -->
           <div class="skill-group-card reveal">
             <div class="skill-group-header">
               <div class="skill-group-icon">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
               </div>
-              <h3 class="skill-group-title">Front-End Stack</h3>
+              <h3 class="skill-group-title">Front-End Development</h3>
             </div>
             <div class="skill-pills-list">
-              <span class="skill-pill" style="color:var(--text-primary); font-weight:600;">React.js</span>
+              <span class="skill-pill" style="color:var(--text-primary); font-weight:600;">React</span>
               <span class="skill-pill">Next.js</span>
               <span class="skill-pill">TypeScript</span>
-              <span class="skill-pill">JavaScript (ES6+)</span>
-              <span class="skill-pill">Semantic HTML5</span>
-              <span class="skill-pill">Modern CSS3</span>
+              <span class="skill-pill">JavaScript</span>
+              <span class="skill-pill">HTML</span>
+              <span class="skill-pill">CSS</span>
               <span class="skill-pill">Tailwind CSS</span>
-              <span class="skill-pill">DOM APIs</span>
-            </div>
-          </div>
-
-          <!-- Group 4: Supporting Technologies -->
-          <div class="skill-group-card reveal">
-            <div class="skill-group-header">
-              <div class="skill-group-icon">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect><rect x="9" y="9" width="6" height="6"></rect><line x1="9" y1="1" x2="9" y2="4"></line><line x1="15" y1="1" x2="15" y2="4"></line><line x1="9" y1="20" x2="9" y2="23"></line><line x1="15" y1="20" x2="15" y2="23"></line><line x1="20" y1="9" x2="23" y2="9"></line><line x1="20" y1="14" x2="23" y2="14"></line><line x1="1" y1="9" x2="4" y2="9"></line><line x1="1" y1="14" x2="4" y2="14"></line></svg>
-              </div>
-              <h3 class="skill-group-title">Supporting Tech</h3>
-            </div>
-            <div class="skill-pills-list">
-              <span class="skill-pill">Git & GitHub</span>
-              <span class="skill-pill">REST APIs</span>
-              <span class="skill-pill">Python</span>
-              <span class="skill-pill">Machine Learning</span>
-              <span class="skill-pill">Scikit-learn</span>
-              <span class="skill-pill">SQL & Data Basics</span>
             </div>
           </div>
         </div>
@@ -683,16 +803,16 @@
         <div class="section-header reveal">
           <div class="section-eyebrow">
             <span class="dot"></span>
-            04 — Work Experience
+            Experience
           </div>
-          <h2 class="section-title">Where I've contributed.</h2>
+          <h2 class="section-title">Verified internship experience.</h2>
           <p class="section-subtitle">
-            Hands-on internship experience in frontend development, design implementation, and machine learning solutions.
+            Transferable design, problem-solving, and implementation skills gained through hands-on industry contributions.
           </p>
         </div>
 
         <div class="timeline-container">
-          <!-- Experience 1: GeeksforGeeks (Prominent UI/UX Focus) -->
+          <!-- Experience 1: GeeksforGeeks -->
           <div class="timeline-entry reveal">
             <span class="timeline-marker"></span>
             <div class="timeline-card featured-role">
@@ -704,7 +824,7 @@
                 <span class="role-duration">December 2025 — January 2026</span>
               </div>
               <p style="color:var(--text-secondary); font-size:0.95rem;">
-                Contributed to interface architecture and user-facing frontend development with an emphasis on responsive design, modular components, and accessible interactions.
+                Contributed to responsive web interface development and reusable component design, ensuring seamless cross-device consistency and enhanced usability.
               </p>
               <ul class="role-highlights">
                 <li>Designed and implemented responsive web layouts, ensuring seamless usability across mobile, tablet, and desktop viewports.</li>
@@ -726,12 +846,12 @@
                 <span class="role-duration">June 2025 — July 2025</span>
               </div>
               <p style="color:var(--text-secondary); font-size:0.95rem;">
-                Conducted end-to-end data analysis and model development to address operational efficiency challenges in enterprise service ticket workflows.
+                Conducted operational data analysis and model development to address enterprise service ticket workflows and improve operational decision support.
               </p>
               <ul class="role-highlights">
                 <li>Analyzed complex operational service-ticket data to uncover patterns and factors driving service resolution times.</li>
-                <li>Built and evaluated a Python-based machine learning forecasting model to predict service ticket delays in advance.</li>
-                <li>Presented structured insights and data visualizations to technical stakeholders for operational decision support.</li>
+                <li>Built a Python-based forecasting model to predict service ticket delays in advance.</li>
+                <li>Created data visualization dashboards translating complex data metrics into actionable insights for operational decision-makers.</li>
               </ul>
             </div>
           </div>
@@ -747,14 +867,14 @@
         <div class="contact-card reveal">
           <div class="section-eyebrow" style="color:var(--accent-light);">
             <span class="dot"></span>
-            05 — Get In Touch
+            Let's Connect
           </div>
           <h2 class="contact-headline">
-            Have a product worth<br>
-            <span class="gradient-text">making better?</span>
+            Let's design something<br>
+            <span class="gradient-text">meaningful.</span>
           </h2>
           <p class="contact-copy">
-            I'm interested in opportunities where thoughtful design and technology come together to solve real problems. Let's discuss UI/UX internship roles, design collaboration, or new ideas.
+            I'm looking for opportunities to contribute to thoughtful digital products, learn from experienced teams, and turn user needs into clear, intuitive experiences.
           </p>
 
           <div class="contact-channels">
@@ -807,7 +927,7 @@
   </footer>
 
   <!-- ========================================================================
-       IN-DEPTH RESUMEIQ UI/UX CASE STUDY MODAL
+       IN-DEPTH RESUMEIQ UI/UX CASE STUDY MODAL (QUICK PREVIEW)
        ======================================================================== -->
   <div id="caseStudyModal" class="case-study-modal" role="dialog" aria-modal="true" aria-labelledby="csModalTitle" aria-hidden="true">
     <div class="modal-dialog">
@@ -818,7 +938,7 @@
       <div class="modal-body">
         <!-- Header -->
         <header class="cs-header">
-          <div class="cs-eyebrow">UI/UX Case Study · Personal Concept Project</div>
+          <div class="cs-eyebrow">UI/UX Case Study · Quick In-Page Preview</div>
           <h1 id="csModalTitle" class="cs-title">ResumeIQ — Career Intelligence Dashboard</h1>
           <p class="cs-summary">
             A comprehensive human-centered design concept created to transform how job seekers navigate ATS filtering, understand skill gaps, and improve resume relevance with explainable AI feedback.
@@ -827,7 +947,7 @@
           <div class="cs-meta-grid">
             <div class="cs-meta-item">
               <small>My Role</small>
-              <strong>Product Designer & Frontend Architect</strong>
+              <strong>Product Designer & Frontend Developer</strong>
             </div>
             <div class="cs-meta-item">
               <small>Design Tools</small>
@@ -835,11 +955,11 @@
             </div>
             <div class="cs-meta-item">
               <small>Implementation</small>
-              <strong>Next.js, React, TypeScript, Tailwind</strong>
+              <strong>React 18, TypeScript, Tailwind CSS</strong>
             </div>
             <div class="cs-meta-item">
-              <small>Scope</small>
-              <strong>End-to-End UX & Prototyping</strong>
+              <small>Full Document</small>
+              <strong><a href="case-study-resumeiq.html" style="color:var(--accent-light); text-decoration:underline;">Open Dedicated Page →</a></strong>
             </div>
           </div>
         </header>
@@ -858,9 +978,6 @@
         <!-- Section 2: User Needs & Personas -->
         <section class="cs-section">
           <h2 class="cs-section-title"><span class="cs-section-number">02</span> Intended Users & Personas</h2>
-          <p class="cs-text">
-            I identified two primary user segments who suffer most from ATS opacity:
-          </p>
           <div style="display:grid; grid-template-columns:1fr 1fr; gap:20px; margin-top:16px;">
             <div style="background:var(--bg-surface); padding:20px; border-radius:12px; border:1px solid var(--border-light);">
               <h4 style="font-size:1.05rem; margin-bottom:6px; color:var(--text-primary);">Persona A: Ananya (Recent CS Graduate)</h4>
@@ -879,205 +996,9 @@
           </div>
         </section>
 
-        <!-- Section 3: Design Goals -->
+        <!-- Section 3: Interactive Prototype Sandbox -->
         <section class="cs-section">
-          <h2 class="cs-section-title"><span class="cs-section-number">03</span> Core Design Goals</h2>
-          <div style="display:grid; grid-template-columns:repeat(3, 1fr); gap:16px; margin-top:16px;">
-            <div style="background:var(--bg-surface); padding:20px; border-radius:12px; border:1px solid var(--border-light);">
-              <div style="font-size:1.2rem; margin-bottom:8px; color:var(--accent-light); font-weight:700;">1. Transparency</div>
-              <p style="font-size:0.85rem; color:var(--text-secondary);">Never show an opaque number. Every score must explain its underlying factors (skills, experience, formatting).</p>
-            </div>
-            <div style="background:var(--bg-surface); padding:20px; border-radius:12px; border:1px solid var(--border-light);">
-              <div style="font-size:1.2rem; margin-bottom:8px; color:var(--accent-light); font-weight:700;">2. Actionability</div>
-              <p style="font-size:0.85rem; color:var(--text-secondary);">Transform every identified gap into an immediate action: e.g., an inline bullet-point rewrite suggestion.</p>
-            </div>
-            <div style="background:var(--bg-surface); padding:20px; border-radius:12px; border:1px solid var(--border-light);">
-              <div style="font-size:1.2rem; margin-bottom:8px; color:var(--accent-light); font-weight:700;">3. Calm Ergonomics</div>
-              <p style="font-size:0.85rem; color:var(--text-secondary);">Job hunting is high-stress. The UI uses deep navy surfaces, electric indigo accents, and generous whitespace to reduce cognitive strain.</p>
-            </div>
-          </div>
-        </section>
-
-        <!-- Section 4: User Flow & Architecture -->
-        <section class="cs-section">
-          <h2 class="cs-section-title"><span class="cs-section-number">04</span> User Flow & Information Architecture</h2>
-          <p class="cs-text">
-            The candidate journey is streamlined into five clear stages from upload to revised application:
-          </p>
-          <div class="flow-diagram">
-            <div class="flow-step">
-              <div class="flow-step-num">STEP 01</div>
-              <div class="flow-step-title">Resume Upload & Role Selection</div>
-            </div>
-            <div class="flow-step">
-              <div class="flow-step-num">STEP 02</div>
-              <div class="flow-step-title">Semantic Parsing & Feature Extraction</div>
-            </div>
-            <div class="flow-step">
-              <div class="flow-step-num">STEP 03</div>
-              <div class="flow-step-title">Dashboard Overview & Match Score</div>
-            </div>
-            <div class="flow-step">
-              <div class="flow-step-num">STEP 04</div>
-              <div class="flow-step-title">Skill-Gap Analysis & Rewriter</div>
-            </div>
-            <div class="flow-step">
-              <div class="flow-step-num">STEP 05</div>
-              <div class="flow-step-title">1-Click Export & Re-Evaluation</div>
-            </div>
-          </div>
-        </section>
-
-        <!-- Section 5: The 6 Key Interface Screens -->
-        <section class="cs-section">
-          <h2 class="cs-section-title"><span class="cs-section-number">05</span> The 6 Key Interface Screens</h2>
-          <p class="cs-text">
-            Each screen addresses a specific friction point discovered during the workflow exploration:
-          </p>
-
-          <div class="cs-screens-grid">
-            <!-- Screen 1: Upload -->
-            <div class="screen-card">
-              <div class="screen-card-header">
-                <span class="screen-card-title">1. Upload & Job Description Intake</span>
-                <span style="font-size:0.75rem; color:var(--accent-light);">Drag & Drop Flow</span>
-              </div>
-              <div class="screen-card-body">
-                <div style="border:2px dashed var(--border-medium); border-radius:10px; padding:28px 16px; text-align:center;">
-                  <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-inline:auto; color:var(--accent-light); margin-bottom:8px;"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="17 8 12 3 7 8"></polyline><line x1="12" y1="3" x2="12" y2="15"></line></svg>
-                  <strong style="display:block; font-size:0.88rem; color:#FFFFFF;">Drop your PDF or DOCX resume here</strong>
-                  <span style="font-size:0.75rem; color:var(--text-muted);">or browse from your local device</span>
-                </div>
-                <div style="margin-top:12px; font-size:0.75rem; color:var(--text-secondary);">
-                  <strong>Design Rationale:</strong> Instant parsing progress bar shows optical character recognition and section detection in real-time, building candidate trust before scoring begins.
-                </div>
-              </div>
-            </div>
-
-            <!-- Screen 2: Analysis Dashboard -->
-            <div class="screen-card">
-              <div class="screen-card-header">
-                <span class="screen-card-title">2. Analysis Dashboard</span>
-                <span style="font-size:0.75rem; color:#10B981;">Readiness 88/100</span>
-              </div>
-              <div class="screen-card-body">
-                <div style="background:var(--bg-surface); padding:16px; border-radius:8px; border:1px solid var(--border-light);">
-                  <div style="display:flex; justify-content:space-between; align-items:center;">
-                    <div>
-                      <span style="font-size:0.7rem; color:var(--text-muted);">OVERALL ATS SCORE</span>
-                      <div style="font-family:var(--font-heading); font-size:1.8rem; font-weight:700; color:#FFFFFF;">88%</div>
-                    </div>
-                    <div style="text-align:right;">
-                      <span style="font-size:0.75rem; color:#10B981; font-weight:600;">Interview Ready</span>
-                      <div style="font-size:0.7rem; color:var(--text-muted);">Top 10% of applicants</div>
-                    </div>
-                  </div>
-                </div>
-                <div style="margin-top:12px; font-size:0.75rem; color:var(--text-secondary);">
-                  <strong>Design Rationale:</strong> Visual breakdown into 3 score pillars: Technical Keywords (92%), Work Experience Metrics (84%), and Layout Readability (90%).
-                </div>
-              </div>
-            </div>
-
-            <!-- Screen 3: Match Score & Explanation -->
-            <div class="screen-card">
-              <div class="screen-card-header">
-                <span class="screen-card-title">3. Semantic Match Breakdown</span>
-                <span style="font-size:0.75rem; color:var(--accent-light);">Explainable AI</span>
-              </div>
-              <div class="screen-card-body">
-                <div style="background:var(--bg-surface); padding:14px; border-radius:8px; border:1px solid var(--border-light); display:flex; flex-direction:column; gap:8px;">
-                  <div>
-                    <div style="display:flex; justify-content:space-between; font-size:0.75rem; margin-bottom:4px;">
-                      <span>Hard Technical Competencies</span>
-                      <strong style="color:#10B981;">94%</strong>
-                    </div>
-                    <div style="height:6px; background:var(--bg-primary); border-radius:3px; overflow:hidden;">
-                      <div style="width:94%; height:100%; background:#10B981;"></div>
-                    </div>
-                  </div>
-                  <div>
-                    <div style="display:flex; justify-content:space-between; font-size:0.75rem; margin-bottom:4px;">
-                      <span>UI/UX Methodologies</span>
-                      <strong style="color:var(--accent-light);">90%</strong>
-                    </div>
-                    <div style="height:6px; background:var(--bg-primary); border-radius:3px; overflow:hidden;">
-                      <div style="width:90%; height:100%; background:var(--accent-primary);"></div>
-                    </div>
-                  </div>
-                </div>
-                <div style="margin-top:12px; font-size:0.75rem; color:var(--text-secondary);">
-                  <strong>Design Rationale:</strong> Prevents "black-box" confusion by highlighting exact phrases matched in the job posting with contextual relevancy scores.
-                </div>
-              </div>
-            </div>
-
-            <!-- Screen 4: Skill-Gap Analysis -->
-            <div class="screen-card">
-              <div class="screen-card-header">
-                <span class="screen-card-title">4. Skill-Gap Matrix</span>
-                <span style="font-size:0.75rem; color:#F59E0B;">Prioritized Action</span>
-              </div>
-              <div class="screen-card-body">
-                <div style="display:flex; gap:6px; flex-wrap:wrap; margin-bottom:8px;">
-                  <span style="font-size:0.72rem; padding:4px 8px; background:rgba(16,185,129,0.12); color:#10B981; border-radius:4px; border:1px solid rgba(16,185,129,0.3);">✓ User Research</span>
-                  <span style="font-size:0.72rem; padding:4px 8px; background:rgba(16,185,129,0.12); color:#10B981; border-radius:4px; border:1px solid rgba(16,185,129,0.3);">✓ Wireframing</span>
-                  <span style="font-size:0.72rem; padding:4px 8px; background:rgba(16,185,129,0.12); color:#10B981; border-radius:4px; border:1px solid rgba(16,185,129,0.3);">✓ Design Systems</span>
-                  <span style="font-size:0.72rem; padding:4px 8px; background:rgba(245,158,11,0.12); color:#F59E0B; border-radius:4px; border:1px solid rgba(245,158,11,0.3);">⚡ A/B Testing</span>
-                </div>
-                <div style="margin-top:12px; font-size:0.75rem; color:var(--text-secondary);">
-                  <strong>Design Rationale:</strong> Differentiates between critical "Must-Have" requirements vs "Nice-to-Have" bonus qualifications so users know where to focus their revisions.
-                </div>
-              </div>
-            </div>
-
-            <!-- Screen 5: Personalized Bullet Rewriter -->
-            <div class="screen-card">
-              <div class="screen-card-header">
-                <span class="screen-card-title">5. Personalized Bullet Rewriter</span>
-                <span style="font-size:0.75rem; color:#10B981;">Diff Comparison</span>
-              </div>
-              <div class="screen-card-body">
-                <div style="background:var(--bg-surface); padding:12px; border-radius:8px; border:1px solid var(--border-light); font-size:0.78rem; line-height:1.5;">
-                  <div style="color:#EF4444; margin-bottom:6px;"><strong>Before:</strong> Worked on UI design for client applications.</div>
-                  <div style="color:#10B981;"><strong>Suggested:</strong> Spearheaded design and usability testing for 4 core web workflows, reducing user churn by 22%.</div>
-                </div>
-                <div style="margin-top:12px; font-size:0.75rem; color:var(--text-secondary);">
-                  <strong>Design Rationale:</strong> Uses the Google XYZ formula (Accomplished [X] as measured by [Y], by doing [Z]) to empower candidates with high-impact phrasing.
-                </div>
-              </div>
-            </div>
-
-            <!-- Screen 6: Job Comparison Interface -->
-            <div class="screen-card">
-              <div class="screen-card-header">
-                <span class="screen-card-title">6. Side-by-Side Job Comparison</span>
-                <span style="font-size:0.75rem; color:var(--accent-light);">Multi-Posting Benchmark</span>
-              </div>
-              <div class="screen-card-body">
-                <div style="display:grid; grid-template-columns:1fr 1fr; gap:8px; font-size:0.75rem;">
-                  <div style="background:var(--bg-surface); padding:10px; border-radius:6px; border:1px solid var(--border-light);">
-                    <strong>Company A (FinTech)</strong>
-                    <div style="color:#10B981; font-weight:700; margin-top:2px;">Match: 91%</div>
-                    <span style="color:var(--text-muted); font-size:0.7rem;">Needs Design Systems</span>
-                  </div>
-                  <div style="background:var(--bg-surface); padding:10px; border-radius:6px; border:1px solid var(--border-light);">
-                    <strong>Company B (SaaS)</strong>
-                    <div style="color:var(--accent-light); font-weight:700; margin-top:2px;">Match: 84%</div>
-                    <span style="color:var(--text-muted); font-size:0.7rem;">Needs Data Viz</span>
-                  </div>
-                </div>
-                <div style="margin-top:12px; font-size:0.75rem; color:var(--text-secondary);">
-                  <strong>Design Rationale:</strong> Allows a single candidate resume to be tested against multiple roles simultaneously without re-entering profile data.
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <!-- Section 6: Interactive Prototype Sandbox -->
-        <section class="cs-section">
-          <h2 class="cs-section-title"><span class="cs-section-number">06</span> Interactive Prototype Sandbox</h2>
+          <h2 class="cs-section-title"><span class="cs-section-number">03</span> Interactive Prototype Sandbox</h2>
           <p class="cs-text">
             Test the live interaction dynamics of ResumeIQ right in this window. Switch tabs to explore real-time scoring adjustments:
           </p>
@@ -1094,7 +1015,7 @@
               <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:16px;">
                 <div>
                   <h3 style="font-size:1.2rem; margin-bottom:4px;">Candidate: Navya Pathak</h3>
-                  <p style="font-size:0.85rem; color:var(--text-muted); margin:0;">Role: UI/UX Designer & Front-End Developer Intern</p>
+                  <p style="font-size:0.85rem; color:var(--text-muted); margin:0;">Target: UI/UX Designer & Front-End Developer</p>
                 </div>
                 <div style="display:flex; gap:12px;">
                   <div style="padding:10px 18px; border-radius:8px; background:rgba(99,102,241,0.12); border:1px solid var(--accent-border); text-align:center;">
@@ -1139,19 +1060,11 @@
           </div>
         </section>
 
-        <!-- Section 7: Key Learnings & Next Steps -->
-        <section class="cs-section">
-          <h2 class="cs-section-title"><span class="cs-section-number">07</span> Learnings & Design Reflections</h2>
-          <p class="cs-text">
-            Designing ResumeIQ reinforced that AI in product design must always be <em>explainable</em>. When users understand why a score is assigned, anxiety gives way to empowerment. 
-          </p>
-          <p class="cs-text">
-            <strong>Next Steps:</strong> Conducting quantitative usability benchmarking with 15 university job seekers, integrating automated LinkedIn job description scraping, and exporting one-click ATS-compliant PDF resumes.
-          </p>
-          <div style="margin-top:28px; text-align:center;">
-            <button class="btn btn-primary" id="modalCloseActionBtn">Close Case Study View</button>
-          </div>
-        </section>
+        <!-- Actions -->
+        <div style="margin-top:28px; display:flex; justify-content:center; gap:16px; flex-wrap:wrap;">
+          <a href="case-study-resumeiq.html" class="btn btn-primary">Open Full Detailed Case Study Page →</a>
+          <button class="btn btn-secondary" id="modalCloseActionBtn">Close Preview</button>
+        </div>
       </div>
     </div>
   </div>

@@ -262,23 +262,41 @@ document.addEventListener('DOMContentLoaded', () => {
     }, 3200);
   }
 
-  // 8. SCROLL REVEAL OBSERVER
+  // 8. SCROLL REVEAL OBSERVER (PROGRESSIVE ENHANCEMENT)
+  document.documentElement.classList.add('js-ready');
   const revealElements = document.querySelectorAll('.reveal');
-  const observerOptions = {
-    threshold: 0.1,
-    rootMargin: '0px 0px -40px 0px'
-  };
 
-  const revealObserver = new IntersectionObserver((entries, obs) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('visible');
-        obs.unobserve(entry.target);
+  if ('IntersectionObserver' in window) {
+    const observerOptions = {
+      threshold: 0.05,
+      rootMargin: '0px 0px 50px 0px'
+    };
+
+    const revealObserver = new IntersectionObserver((entries, obs) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          obs.unobserve(entry.target);
+        }
+      });
+    }, observerOptions);
+
+    revealElements.forEach(el => revealObserver.observe(el));
+  } else {
+    revealElements.forEach(el => el.classList.add('visible'));
+  }
+
+  // Viewport fallback check
+  function checkRevealFallbacks() {
+    revealElements.forEach(el => {
+      const rect = el.getBoundingClientRect();
+      if (rect.top <= window.innerHeight + 120) {
+        el.classList.add('visible');
       }
     });
-  }, observerOptions);
-
-  revealElements.forEach(el => revealObserver.observe(el));
+  }
+  checkRevealFallbacks();
+  window.addEventListener('scroll', checkRevealFallbacks, { passive: true });
 
   // 9. ACTIVE NAV LINK SPY
   const sections = document.querySelectorAll('section[id], main[id]');
